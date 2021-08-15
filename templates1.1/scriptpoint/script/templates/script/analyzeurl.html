@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %}PyAnalyze Web URL{% endblock title %}
+
+{% block active %} active{% endblock active %}
+
+{% block content %} 
+<div class="col-md-8 p-4 text-white">       
+    <h4 class="fst-italic">Webtags Analyzer - Extract & Analyze Meta Tags</h4>
+    <hr class="bg-light">
+    <h1 class="display-4 fst-italic">Enter Website URL</h1>
+    <form>
+        <div class="form-group">
+            <label for="url"></label>
+            <input type="text" class="form-control" id="url" aria-describedby="emailHelp" placeholder="Enter Website">
+        </div>
+        <button type="submit" class="btn btn-primary">Analyze</button>
+    </form> 
+    
+    <div class="jumbotron my-4 text-dark">
+        <h3 class="display-6">View Your Results...........</h3>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+   <hr>   
+   <p class="lead">
+    <h4 class="fst-italic">Meta Title:</h4> 
+    <span>here is the list of your website meta title</span><hr>
+
+    <h4 class="fst-italic">Meta Description: </h4>
+    <span> here is the list of your website meta descriptio</span>
+    <hr>
+
+    <h4 class="fst-italic">Meta Keyword:</h4>
+    <span> here is the list of your website meta keywords</span><hr>
+   </p>
+
+    <div class="meta-links my-3">
+        <a class="btn btn-success d-block" data-toggle="collapse" href="#metaLinks" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Website Link Details
+        </a>
+        <div class="collapse my-2" id="metaLinks">
+            <div class="card card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+            </div>
+        </div>
+     </div>
+
+     <div class="meta-paragraphs my-3">
+        <a class="btn btn-success d-block" data-toggle="collapse" href="#metaParagraphs" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Website Paragraphs Details
+        </a>
+        <div class="collapse my-2" id="metaParagraphs">
+            <div class="card card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Canuipcode</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+            </div>
+        </div>
+     </div>    
+      </div>
+ </div>
+{% endblock content %}
